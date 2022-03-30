@@ -56,13 +56,12 @@ class BlockchainExplorer extends Component {
       creatorId: parsedBlock.txs[0].creator_msp_id,
     };
     let blocks = this.state.blocks;
-    
+
     //display 15 blocks
     if(blocks.length==15) {
-      blocks.splice(0,1, newBlock);
-    } else {
-      blocks.push(newBlock);
-    }
+      blocks.splice(0,1);
+    } 
+    blocks.push(newBlock);
     
     this.setState({ blocks });
     $(function () {
