@@ -58,11 +58,11 @@ class BlockchainExplorer extends Component {
     let blocks = this.state.blocks;
 
     //display 15 blocks
-    if(blocks.length==15) {
-      blocks.splice(0,1);
-    } 
+    if (blocks.length == 15) {
+      blocks.splice(0, 1);
+    }
     blocks.push(newBlock);
-    
+
     this.setState({ blocks });
     $(function () {
       $('[data-toggle="popover"]').popover();
