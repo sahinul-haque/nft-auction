@@ -59,9 +59,9 @@ class BlockchainExplorer extends Component {
 
     //display 15 blocks
     if (blocks.length == 15) {
-      blocks.splice(0, 1);
-    }
-    blocks.push(newBlock);
+      blocks.splice(0, 1); 
+    } 
+    blocks.push(newBlock); 
 
     this.setState({ blocks });
     $(function () {
